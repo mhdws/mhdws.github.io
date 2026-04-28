@@ -41,7 +41,6 @@
             secondary: "#a855f7",
             accent: "#ec4899",
           },
-          patreon: "#FF424D",
         },
         animation: {
           "fade-in": "fadeIn 0.5s ease-out",
@@ -72,24 +71,6 @@
   footer {
     transition: background-color 0.3s ease, color 0.3s ease,
       border-color 0.3s ease;
-  }
-  .hover-instagram:hover {
-    color: #e1306c;
-    transition: color 0.3s;
-  }
-  .hover-patreon:hover {
-    color: #FF424D;
-    transition: color 0.3s;
-  }
-
-  /* ── Floating Support Popup ── */
-  #supportPopup {
-    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16,1,0.3,1);
-  }
-  #supportPopup.hidden-popup {
-    opacity: 0;
-    transform: translateY(16px) scale(0.97);
-    pointer-events: none;
   }
 </style>
 </head>
@@ -123,34 +104,6 @@
         <iconify-icon id="sunIcon"  icon="ph:sun-bold"  width="22" class="hidden dark:block"></iconify-icon>
         <iconify-icon id="moonIcon" icon="ph:moon-bold" width="22" class="block dark:hidden"></iconify-icon>
       </button>
-
-      <!-- Nav links -->
-      <nav class="flex-shrink-0 border-l border-gray-200 dark:border-gray-700 pl-4 flex items-center gap-3">
-
-        <!-- GitHub -->
-        <a
-          href="https://github.com/dearabhin/gemini-watermark-remover"
-          target="_blank"
-          class="text-slate-600 dark:text-slate-400 hover:text-brand-primary dark:hover:text-white transition-colors flex items-center gap-1 font-semibold text-sm md:text-base"
-          aria-label="GitHub"
-        >
-          <iconify-icon icon="mdi:github" width="24"></iconify-icon>
-          <span class="hidden sm:inline">GitHub</span>
-        </a>
-
-        <!-- ★ Patreon (new) -->
-        <a
-          href="https://www.patreon.com/cw/AbhinKrishna/membership"
-          target="_blank"
-          class="text-slate-600 dark:text-slate-400 hover-patreon transition-colors flex items-center gap-1 font-semibold text-sm md:text-base"
-          aria-label="Support on Patreon"
-          title="Support on Patreon"
-        >
-          <iconify-icon icon="simple-icons:patreon" width="22"></iconify-icon>
-          <span class="hidden sm:inline">Patreon</span>
-        </a>
-
-      </nav>
     </div>
   </div>
 </header>
@@ -166,13 +119,13 @@
       Remove
       <span
         class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent"
-        >AI Sparkle Watermark</span
+        >Gemini Watermark</span
       >
     </h2>
     <p
       class="text-slate-500 dark:text-slate-400 mb-8 max-w-xl mx-auto font-medium leading-relaxed text-base md:text-lg"
     >
-      Remove the visible ✨ AI-Sparkle watermark from Gemini AI images.
+      Remove the visible ✨ Gemini watermark from Gemini AI images.
       <span class="block md:inline">Client-side processing powered by your browser.</span>
       <span class="block md:inline text-brand-primary dark:text-brand-secondary font-semibold"
         >Free, fast, lossless and private.</span
@@ -290,8 +243,7 @@
           </div>
           <h3 class="font-bold text-slate-900 dark:text-white mb-2 text-lg">Open Source</h3>
           <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
-            Completely free and open source. Developers can inspect the code on
-            <a href="https://github.com/dearabhin/gemini-watermark-remover" class="text-brand-primary hover:underline">GitHub</a>.
+            Completely free and open source.
           </p>
         </div>
       </div>
@@ -341,52 +293,9 @@
       Developed by
       <span class="font-bold text-slate-900 dark:text-white">Abhin Krishna</span>
     </p>
-    <div class="flex justify-center gap-6 mt-4 text-slate-400 dark:text-slate-500">
-
-      <!-- Twitter / X -->
-      <a
-        href="https://twitter.com/dearabhin"
-        target="_blank"
-        class="hover:text-black dark:hover:text-white hover:scale-110 transition-transform"
-        aria-label="Twitter"
-      ><iconify-icon icon="line-md:twitter-x" width="24"></iconify-icon></a>
-
-      <!-- Instagram -->
-      <a
-        href="https://instagram.com/dearabhin"
-        target="_blank"
-        class="hover-instagram hover:scale-110 transition-transform"
-        aria-label="Instagram"
-      ><iconify-icon icon="mdi:instagram" width="24"></iconify-icon></a>
-
-      <!-- GitHub -->
-      <a
-        href="https://github.com/dearabhin"
-        target="_blank"
-        class="hover:text-black dark:hover:text-white hover:scale-110 transition-transform"
-        aria-label="GitHub"
-      ><iconify-icon icon="mdi:github" width="24"></iconify-icon></a>
-
-      <!-- LinkedIn -->
-      <a
-        href="https://linkedin.com/in/abhin-krishna"
-        target="_blank"
-        class="hover:text-[#0077b5] hover:scale-110 transition-transform"
-        aria-label="LinkedIn"
-      ><iconify-icon icon="mdi:linkedin" width="24"></iconify-icon></a>
-
-      <!-- ★ Patreon (new) -->
-      <a
-        href="https://www.patreon.com/cw/AbhinKrishna/membership"
-        target="_blank"
-        class="hover-patreon hover:scale-110 transition-transform"
-        aria-label="Support on Patreon"
-      ><iconify-icon icon="simple-icons:patreon" width="24"></iconify-icon></a>
-
-    </div>
     <p class="text-xs text-slate-400 dark:text-slate-600 mt-4">
       Disclaimer: This project is not affiliated with Google Gemini. <br />
-      © 2025 AI Sparkle Remover. All rights reserved.
+      © 2025 Gemini Watermark Remover. All rights reserved.
     </p>
   </div>
 </footer>
@@ -403,58 +312,6 @@
       class="w-16 h-16 rounded-full border-4 border-transparent border-t-brand-primary border-r-brand-secondary border-b-brand-accent animate-spin mb-4"
     ></div>
     <p class="text-brand-primary font-bold text-lg animate-pulse">Processing...</p>
-  </div>
-</div>
-
-
-<div
-  id="supportPopup"
-  role="dialog"
-  aria-label="Support the creator"
-  class="fixed bottom-6 right-6 z-50 w-72 rounded-2xl shadow-2xl overflow-hidden hidden-popup"
-  style="background: linear-gradient(135deg,#211d51 0%,#7318b8 100%);"
->
-  <!-- Close button -->
-  <button
-    id="closePopup"
-    aria-label="Dismiss"
-    class="absolute top-3 right-3 text-white/50 hover:text-white transition-colors focus:outline-none"
-  >
-    <iconify-icon icon="ph:x-bold" width="16"></iconify-icon>
-  </button>
-
-  <div class="p-5">
-    <!-- Coffee emoji + heading -->
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-3xl">☕</span>
-      <div>
-        <p class="text-white font-bold text-sm leading-tight">Enjoying the tool?</p>
-        <p class="text-white/60 text-xs">Help keep it free &amp; open source</p>
-      </div>
-    </div>
-
-    <p class="text-white/70 text-xs mb-4 leading-relaxed">
-      This tool is 100% free. If it saved you time, consider buying me a coffee on <b>Patreon</b>, it helps cover maintainance costs and future features!
-    </p>
-
-    <!-- CTA button -->
-    <a
-      href="https://www.patreon.com/cw/AbhinKrishna/membership"
-      target="_blank"
-      class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl font-bold text-sm text-white transition-transform hover:scale-105 active:scale-95"
-      style="background: #FF424D;"
-    >
-      <iconify-icon icon="simple-icons:patreon" width="16"></iconify-icon>
-      Support on Patreon
-    </a>
-
-    <!-- Dismiss link -->
-    <button
-      id="dismissPopup"
-      class="mt-2 w-full text-center text-white/40 hover:text-white/70 text-xs transition-colors"
-    >
-      No thanks
-    </button>
   </div>
 </div>
 
@@ -484,45 +341,6 @@
       localStorage.theme = "dark";
     }
   });
-
-  // ── Floating support popup ────────────────────
-  (function () {
-    const popup      = document.getElementById("supportPopup");
-    const closeBtn   = document.getElementById("closePopup");
-    const dismissBtn = document.getElementById("dismissPopup");
-
-    const STORAGE_KEY  = "supportPopupDismissed";
-    const SHOW_DELAY   = 7000;   // ms — show 7 s after page load
-
-    function hidePopup() {
-      popup.classList.add("hidden-popup");
-      // fully remove from layout after transition
-      setTimeout(() => { popup.style.display = "none"; }, 400);
-    }
-
-    function showPopup() {
-      popup.style.display = "block";
-      // allow display:block to paint before triggering transition
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          popup.classList.remove("hidden-popup");
-        });
-      });
-    }
-
-    // Don't show again if already dismissed this session
-    if (!sessionStorage.getItem(STORAGE_KEY)) {
-      setTimeout(showPopup, SHOW_DELAY);
-    }
-
-    function dismiss() {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-      hidePopup();
-    }
-
-    closeBtn.addEventListener("click",   dismiss);
-    dismissBtn.addEventListener("click", dismiss);
-  })();
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
